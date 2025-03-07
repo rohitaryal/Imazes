@@ -20,9 +20,14 @@ func main() {
 	argv.AddArg("count", "c", "Number of images you want to generate", "1")
 	argv.AddArg("steps", "k", "Number of iterative denoising processes the model performs", "40")
 	argv.AddArg("ratio", "r", "Aspect ratio or size of generated image", "1:1")
+	argv.AddArg("ratio", "h", "Generate this help", "")
 
 	if slices.Contains(os.Args, "--help") {
 		argv.PrintHelp()
+		fmt.Printf("\n\n")
+		printStyles()
+		fmt.Printf("\n\n")
+		printRatio()
 		return
 	}
 
@@ -85,7 +90,7 @@ func main() {
 }
 
 func printStyles() {
-	fmt.Printf("[!] Invalid style. Available Styles include:\n\n")
+	fmt.Printf("[!] Available Styles include:\n\n")
 	for index, style := range imazes.Styles {
 		fmt.Printf("%-20s", style)
 		if index%5 == 0 {
@@ -97,7 +102,7 @@ func printStyles() {
 }
 
 func printRatio() {
-	fmt.Printf("[!] Invalid ratio. Available ratio include:\n\n")
+	fmt.Printf("[!] Available ratio include:\n\n")
 	for index, ratio := range imazes.Ratios {
 		fmt.Printf("%-5s", ratio)
 		if index%5 == 0 {
