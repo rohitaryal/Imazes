@@ -20,7 +20,7 @@ func main() {
 	argv.AddArg("count", "c", "Number of images you want to generate", "1")
 	argv.AddArg("steps", "k", "Number of iterative denoising processes the model performs", "40")
 	argv.AddArg("ratio", "r", "Aspect ratio or size of generated image", "1:1")
-	argv.AddArg("ratio", "h", "Generate this help", "")
+	argv.AddArg("help", "h", "Generate this help", "")
 
 	if slices.Contains(os.Args, "--help") {
 		argv.PrintHelp()
