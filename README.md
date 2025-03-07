@@ -9,7 +9,7 @@ cd imazes
 go build ./cmd/imazescli/main.go
 ```
 
-Or get pre-compiled binary from releases
+Or get pre-compiled binary from [releases](https://github.com/rohitaryal/imazes/releases)
 
 # Available Options
 
