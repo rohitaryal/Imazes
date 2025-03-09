@@ -4,8 +4,8 @@ Generate images from your terminal for free
 ## 🎨 Usage
 From source
 ```bash
-git clone https://github.com/rohitaryal/imazes
-cd imazes
+git clone https://github.com/rohitaryal/Imazes
+cd Imazes
 go build ./cmd/imazescli/main.go
 ```
 
