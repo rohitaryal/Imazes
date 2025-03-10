@@ -44,14 +44,14 @@ func main() {
 	}
 
 	parsedCount, _ := strconv.Atoi(count)
-	if parsedCount > 20 {
-		fmt.Println("[!] Image count must be less than ")
+	if parsedCount > 8 {
+		fmt.Println("[!] Image count must be less than or equal to 8")
 		return
 	}
 
 	parsedSteps, _ := strconv.Atoi(steps)
 	if parsedSteps > 50 {
-		fmt.Println("[!] Step count must be less than 50")
+		fmt.Println("[!] Step count must be less than or equal to 50")
 		return
 	}
 
