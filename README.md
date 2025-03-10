@@ -148,6 +148,12 @@ The response will be in following format, and record_id represents our specific 
 ```
 
 ### Step 3: Check the status
+Now send a GET request with the auth token and record id to check the status
+```http
+GET /api/v1/text2image/__RECORD__ID__HERE__/status HTTP/2
+Host: img-gen-prod.ai-arta.com
+Authorization: __TOKEN__WILL__BE__HERE__
+```
 
 You will get replied as this at first request:
 
